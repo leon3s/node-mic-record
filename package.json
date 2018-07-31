@@ -1,0 +1,28 @@
+{
+  "name": "node-mic-record",
+  "version": "0.0.0",
+  "description": "Record microphone sond using nodejs",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "keywords": [
+    "sox",
+    "audio",
+    "speech",
+    "record"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leon3s/node-mic-record"
+  },
+  "author": "Gilles De Mey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leon3s/node-mic-record/issues"
+  },
+  "homepage": "https://github.com/leon3s/node-mic-record",
+  "directories": {
+    "example": "examples"
+  }
+}
