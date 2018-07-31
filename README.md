@@ -1,4 +1,4 @@
-# node-record-lpcm-16
+# node-mic-record
 
 Records a 16-bit signed-integer linear pulse modulation code WAV audio file.
 
@@ -8,7 +8,7 @@ These audio files are fully compatible with both the [Google Speech to Text API 
 
 ## Installation
 
-`npm install node-record-lpcm16`
+`npm install node-mic-record`
 
 ## Dependencies
 
@@ -44,7 +44,7 @@ device        : null   // recording device (e.g.: 'plughw:1')
 ## Usage
 
 ```javascript
-var record = require('node-record-lpcm16')
+var record = require('node-mic-record')
 var fs = require('fs')
 
 var file = fs.createWriteStream('test.wav', { encoding: 'binary' })
@@ -59,7 +59,7 @@ record.start({
 The library will automatically attempt to stop when it encounters silence, if not you can stop the recording manually.
 
 ```javascript
-var record = require('node-record-lpcm16')
+var record = require('node-mic-record')
 var fs = require('fs')
 
 var file = fs.createWriteStream('test.wav', { encoding: 'binary' })
@@ -78,7 +78,7 @@ This module uses Node.js streams, if you're unfamiliar with them I'd suggest rea
 Here's how you can write your own Siri in just 10 lines of code.
 
 ```javascript
-var rec = require('node-record-lpcm16')
+var rec = require('node-mic-record')
 var request = require('request')
 
 var witToken = process.env.WIT_TOKEN; // get one from wit.ai!
